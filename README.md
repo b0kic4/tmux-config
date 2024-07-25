@@ -1,11 +1,10 @@
 # tmux-config
-# find your tmux config file. On mac ~/.tmux.conf
-# and paste this:
+Find your tmux config file. On mac `~/.tmux.conf` and paste this:
 
+```tmux
 set -g mouse on
 set -sg escape-time 0 
 set -g status-interval 0
-
 
 # Reload configuration
 unbind r
@@ -24,7 +23,7 @@ set -g @plugin 'dracula/tmux'
 
 # Dracula theme settings
 set -g @dracula-show-powerline true
-# Ucomment for weather plugin (you need to set your location)
+# Uncomment for weather plugin (you need to set your location)
 # set -g @dracula-plugins "weather"
 set -g @dracula-show-flags true
 set -g @dracula-show-left-icon session
@@ -78,4 +77,3 @@ bind r source-file ~/.tmux.conf \; display-message "Tmux config reloaded!"
 
 # Set default terminal to 256 colors
 set -g default-terminal "screen-256color"
-
